@@ -1,0 +1,173 @@
+$color1: rgb(255, 255, 255);
+$color2: black;
+
+.color1{
+    color: $color1;
+}
+.color2{
+    color: $color2;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: monospace;
+    &:hover{
+        color: purple;
+    }
+}
+
+li{
+    list-style: none;
+}
+
+.logo{
+    border-radius: 50px;
+}
+
+.name{
+    font-size: 22px;
+}
+
+.nuv{
+    margin-top: 10px;
+}
+
+.nuv-div{
+    display: none;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.nuv a{
+    font-size: 25px;
+    padding-top: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.menu_btn{
+    border-radius: 10px;
+    background-color: #55358f00;
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.section_link{
+    height: 95%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+
+    div{
+        padding-top: 5px;
+        border-bottom: 2px solid black;
+    }
+}
+
+.table_div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+table{
+    border: 4px solid rgb(255, 0, 0);
+    margin-top: 20px;
+    .name th{
+        background-color: rgb(255, 255, 255);
+    }
+    .nct td{
+        background-color: rgb(167, 167, 255);
+    }
+    .ct td{
+        background-color: rgb(152, 255, 160);
+    }
+
+    th, td{
+        border-left: 3px solid rgb(0, 0, 0);
+    }
+    .no_b{
+        border: none;
+    }
+}
+
+.form{
+    background-color: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    input{
+        padding-bottom: 10px;
+    }
+    .form-section{
+        padding: 20px;
+        
+    }
+}
+
+.form-2{
+    background-color: #ffffff;
+    border-radius: 0px 0px 0px 0px;
+    input{
+        padding-bottom: 10px;
+    }
+    .form-section{
+        padding: 20px;
+    }
+    label{
+        margin-right: 20px;
+    }
+    padding-bottom: 10px;
+}
+footer{
+    margin-top: 20px;
+    background-color: #ffffff;
+    img{
+        padding-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .promo{
+        padding-top: 15px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 400px){
+    .order_section div{
+        .section_link{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .order_section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order_table{
+        order: 0;
+    }
+    .linl_order{
+        order:3;
+    }
+}
